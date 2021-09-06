@@ -33,7 +33,7 @@ class ProductController extends Controller
       ]);
       $product = Product::create($request->all());
       if($request->hasfile('picture')) {
-        $path = $request->file('picture')->store('public/image');
+        $path = $request->file('picture')->store('image');
         $product->picture = $path;
         $product->save();
       }
@@ -55,7 +55,7 @@ class ProductController extends Controller
     {
       $product->update($request->all());
       if($request->hasfile('picture')) {
-        $path = $request->file('picture')->store('public/image');
+        $path = $request->file('picture')->store('image');
         $product->picture = $path;
         $product->save();
       }

@@ -11,7 +11,7 @@
                   {!! Form::model($category, ['method' => 'PATCH', 'action' => ['App\Http\Controllers\CategoryController@update', $category->id]]) !!}
                   <div class="form-group">
                     {!!Form::label('name', 'Category Name')!!}
-                    {!!Form::text('name', null, ['class'=>'form control', 'placeholder'=>'Category Name', 'required'])!!}
+                    {!!Form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Category Name', 'required'])!!}
                   </div>
                   <div class="box-footer clearfix">
                     {!!Form::submit('Save',['class'=>"pull-right btn btn-primary"])!!}

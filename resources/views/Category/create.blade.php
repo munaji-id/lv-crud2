@@ -11,7 +11,7 @@
                   {!! Form::model($category = new App\Models\Category,['url'=>'/category']) !!}
                   <div class="form-group">
                     {!!Form::label('name', 'Category Name')!!}
-                    {!!Form::text('name', null, ['class'=>'form control', 'placeholder'=>'Category Name', 'required'])!!}
+                    {!!Form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Category Name', 'required'])!!}
                   </div>
                   <div class="box-footer clearfix">
                     {!!Form::submit('Save',['class'=>"pull-right btn btn-primary"])!!}

@@ -11,15 +11,15 @@
                   {!! Form::model($product = new App\Models\Product,['url'=>'/product', 'files' => true]) !!}
                   <div class="form-group">
                     {!!Form::label('name', 'Product Name')!!}
-                    {!!Form::text('name', null, ['class'=>'form control', 'placeholder'=>'Product Name', 'required'])!!}
+                    {!!Form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Product Name', 'required'])!!}
                   </div>
                   <div class="form-group">
                     {!!Form::label('category_id', 'Category Name')!!}
-                    {!!Form::select('category_id', $categories, null, ['class'=>'form control'])!!}
+                    {!!Form::select('category_id', $categories, null, ['class'=>'form-control'])!!}
                   </div>
                   <div class="form-group">
                     {!!Form::label('barcode', 'Product Barcode')!!}
-                    {!!Form::text('barcode', null, ['class'=>'form control', 'placeholder'=>'Product Name', 'required'])!!}
+                    {!!Form::text('barcode', null, ['class'=>'form-control', 'placeholder'=>'Product Name', 'required'])!!}
                   </div>
                   <div class="form-group">
                     {!!Form::label('price', 'Price')!!}
@@ -27,20 +27,20 @@
                       <div class="btn btn-light"><span class="add-on">Rp.</span>
                       </div>
                     </span>
-                    {!!Form::text('price', null, ['class'=>'form control', 'placeholder'=>'Price', 'required'])!!}
+                    {!!Form::text('price', null, ['class'=>'form-control', 'placeholder'=>'Price', 'required'])!!}
                     </div>
                   </div>
                   <div class="form-group">
                     {!!Form::label('unit', 'Product Unit')!!}
-                    {!!Form::text('unit', null, ['class'=>'form control', 'placeholder'=>'Product Unit', 'required'])!!}
+                    {!!Form::text('unit', null, ['class'=>'form-control', 'placeholder'=>'Product Unit', 'required'])!!}
                   </div>
                   <div class="form-group">
                     {!!Form::label('stock', 'Product Stock')!!}
-                    {!!Form::text('stock', null, ['class'=>'form control', 'placeholder'=>'Product Stock', 'required'])!!}
+                    {!!Form::text('stock', null, ['class'=>'form-control', 'placeholder'=>'Product Stock', 'required'])!!}
                   </div>
                   <div class="form-group">
                     {!!Form::label('picture', 'Product Gambar')!!}
-                    {!!Form::file('picture', null, ['class'=>'form control', 'placeholder'=>'Product Gambar', 'required'])!!}
+                    {!!Form::file('picture', null, ['class'=>'form-control', 'placeholder'=>'Product Gambar', 'required'])!!}
                   </div>
                   <div class="box-footer clearfix">
                     {!!Form::submit('Save',['class'=>"pull-right btn btn-primary"])!!}
